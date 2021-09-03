@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina del clima</title>
+
+    <link rel="stylesheet" href="./styles.css" />
+</head>
+
+<body>
+    <header>
+        <h1 id="title">Busca el clima de tu ciudad</h1>
+        <img id="arrow" src="./resources/images/DownArrow.svg" alt="DownArrow" />
+        <form id="formulario" action="">
+            <input id="busqueda" type="text" placeholder="Ingresa el nombre de la ciudad" />
+            <input type="submit" value="Buscar" />
+        </form>
+    </header>
+
+    <section id="seccion">
+        <h2 id="nombre" class="ocultado">Ciudad</h2>
+        <article id="principal" class="datos ocultado">
+            <h4 id="temperatura">18 °C</h4>
+            <img id="sol" class="ocultado" src="./resources/images/sun.svg" alt="Sol" />
+            <img id="nublado" src="./resources/images/CloudAndSun.svg" alt="Nublado" />
+            <img id="lluvia" class="ocultado" src="./resources/images/Rain.svg" alt="Lluvia" />
+        </article>
+        <article id="datos" class="datos ocultado">
+            <p>
+                Descripción: <br />
+                <br />
+                Temperatura maxima: <br />
+                Temperatura minima: <br />
+                <br />
+                Humedad: <br />
+                Presión: <br />
+                <br />
+            </p>
+            <p>
+                Porcentaje de nubes: <br />
+                <br />
+                Velocidad del viento: <br />
+                Angulo de viento: <br />
+                <br />
+                Latitud: <br />
+                Longitud:
+            </p>
+        </article>
+
+        <div id="cargandoBox">
+            <div id="cargando"></div>
+        </div>
+    </section>
+
+    <script src="./index.js"></script>
+    
+</body>
+
+</html>

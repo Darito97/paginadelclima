@@ -1,0 +1,183 @@
+:root{
+    --blue: #5386E4;
+    --border-box: 2px solid var(--blue);
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+    header{
+        text-align: center;
+    }
+        #title{
+            background: linear-gradient(180deg, #FC4A1A 0%, #F7B733 100%);
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+        #arrow{
+            animation: updown 1s linear infinite;
+        }
+        @keyframes updown {
+            0%{
+                transform: translateY(0px);
+            }
+            50%{
+                transform: translateY(-5px);
+            }
+            100%{
+                transform: translateY(0px);
+            }
+        }
+        #formulario{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 10px 40px;
+        }
+            #formulario> input[type="text"]{
+                border:  var(--border-box);
+                border-radius: 5px;
+                font-size: 18px;
+
+                padding: 7px 5px;
+                margin-bottom: 10px;
+                text-align: center;
+                width: 100%;
+            }
+            #formulario> input[type="submit"]{
+                background-color: var(--blue);
+                border: none;
+                border-radius: 5px;
+                box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.25);
+
+                color: #fff;
+                padding: 10px 0;
+                width: 500px;
+            }
+            #formulario> input[type="submit"]:active{
+                box-shadow: none;
+            }
+
+    section{
+        border: var(--border-box);
+        border-radius: 5px;
+        box-sizing: border-box;
+        box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25), -2px 0px 4px rgba(0, 0, 0, 0.25);
+        padding: 20px 40px;
+        margin: 20px 80px;
+    }
+        section> h2{
+            font-size: 28px;
+            margin-top: 0;
+            text-align: center;
+            font-style: italic;
+        }
+            .datos{
+                display: flex;
+                justify-content: center;
+            }
+                .datos > img{
+                    padding-left: 20px;
+                    width: 120px;
+                }
+                .datos > h4{
+                    font-size: 36px;
+                    padding-right: 20px;
+                }
+                .datos > p {
+                    font-size: 18px;
+                    margin: 0;
+                    padding: 10px;
+                }
+                .ocultado{
+                    display: none;
+                }
+    #cargandoBox{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+        #cargando{
+            animation: girar 1s linear infinite;
+
+            border: 10px solid #eee;
+            border-top: 10px solid #666;
+            border-radius: 50%;
+            height: 50px;
+            width: 50px;
+        }
+        @keyframes girar {
+            from{
+                transform: rotate(0deg);
+            }
+            to{
+                transform: rotate(360deg);
+            }
+        }
+
+    
+
+@media only screen and (max-width: 700px){
+    
+    #formulario> input[type="submit"]{
+        max-width: 300px;
+    }
+    section{
+        margin: 20px;
+        padding: 20px;
+    }
+    .datos > img{
+        width: 80px;
+        padding-left: 0;
+    }
+    .datos > h4{
+        padding-right: 0;
+    }
+}
+@media only screen and (max-width: 450px){
+    #title{
+        padding: 10px;
+        font-size: 28px;
+    }
+    #arrow{
+        width: 30px;
+    }
+    #formulario{
+        justify-content: center;
+        padding: 0 20px;
+    }
+    #formulario> input[type="submit"]{
+        width: 200px;
+        font-weight: bold;
+    }
+
+    section > h2{
+        font-size: 26px;
+        margin-bottom: 5px;
+    }
+    .datos > img{
+        width: 60px;
+        height: 60px;
+    }
+    .datos > h4{
+        font-size: 28px;
+        margin: 20px 0;
+    }
+    #datos{
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+    .datos > p {
+        padding: 0px;
+        font-size: 16px;
+    }
+}
