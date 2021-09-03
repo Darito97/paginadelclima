@@ -30,7 +30,8 @@ const Buscar = async (nombreDeCiudad) => {
     nombre.className = 'ocultado';
     datos.className = 'ocultado';
     principal.className = 'ocultado';
-    const API = 'http://api.openweathermap.org/data/2.5/weather?q=' + nombreDeCiudad + '&lang=sp&appid=b6102a84903cfbb41770382059089ef1&units=metric';
+    const API_KEY = '{API_KEY}';
+    const API = 'http://api.openweathermap.org/data/2.5/weather?q=' + nombreDeCiudad + '&lang=sp&appid='+API_KEY+'&units=metric';
     const obtenerRespuesta = await fetch(API);
     const clima = await obtenerRespuesta.json();
     ActualizarDatosDeInterfaz(clima, nombreDeCiudad);
