@@ -1,4 +1,4 @@
-# paginadelclima
+# Pagina Del Clima
 Para hacer funcionar este proyecto se necesita modificar el archivo index.js en la linea 33 la cual especifica la API_KEY.
 Y si se preguntan de donde conseguirla les comparto el siguiente link.
 [Pagina de la API](https://openweathermap.org/)
