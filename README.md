@@ -1,5 +1,5 @@
 # Pagina Del Clima
-### Para ver el funcionamiento de esta pagina puedes visitar el siguiente link: https://paginadelclima.000webhostapp.com/index.html
+### Para ver el funcionamiento de esta pagina puedes visitar una [vista previa](https://paginadelclima.000webhostapp.com/index.html).
 #### Esta pagina esta hecha con las siguientes tecnologias:
 - HTML5
 - CSS
